@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/atom"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="Please Login or Sign up first"
+            android:textSize="18sp"
+            android:textColor="@color/colorSelected"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editText_email"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv"
+            android:hint="Enter Mail address"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/editText_email"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="230dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editText_password"
+            android:background="@drawable/login"
+            android:onClick="Login"
+            />
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="227dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/loginBtn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/signup"
+            android:onClick="Signup"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="© AMIT H KHAN"
+            android:textSize="15sp"
+            android:textColor="@color/colorSelected"
+            android:layout_marginStart="10dp"
+            android:fontFamily="serif"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

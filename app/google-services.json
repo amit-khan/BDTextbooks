@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "778394237992",
+    "firebase_url": "https://bdtextbooks-a78dc.firebaseio.com",
+    "project_id": "bdtextbooks-a78dc",
+    "storage_bucket": "bdtextbooks-a78dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778394237992:android:e5775896cb4c0241",
+        "android_client_info": {
+          "package_name": "com.technofreak.bdtextbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778394237992-ud26m2i2o9clmi35dh6d65ph9k1gpp19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technofreak.bdtextbooks",
+            "certificate_hash": "8eb39dd0a674ca1173401eba1b6e278a96333abd"
+          }
+        },
+        {
+          "client_id": "778394237992-nbkec4phh7p42fmfp9sn7dln49hic1qb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwVPTXMhZb4a3sNQkksw549C72PZnoBkI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778394237992-nbkec4phh7p42fmfp9sn7dln49hic1qb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

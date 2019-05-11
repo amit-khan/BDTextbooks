@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Classes.Class1"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="আমার বাংলা বই"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="open"
+            android:textSize="15sp"
+            android:onClick="ban"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:src="@drawable/ic_delete"
+            android:onClick="del_ban"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Forum"
+            android:textSize="15sp"
+            android:onClick="forum"
+            android:tag="ban_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/r1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="English for Today"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="open"
+            android:textSize="15sp"
+            android:onClick="eng"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:src="@drawable/ic_delete"
+            android:onClick="del_eng"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Forum"
+            android:textSize="15sp"
+            android:onClick="forum"
+            android:tag="eng_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbar"
+        style="@android:style/Theme.Holo"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:elevation="8dp"
+        android:background="@color/colorSelected"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please wait while downloading..."
+            android:textSize="18sp"
+            android:textAlignment="center"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:theme="@android:style/Theme.Holo"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

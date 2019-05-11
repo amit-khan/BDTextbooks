@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:focusableInTouchMode="true"
+    tools:context=".ForumActivity">
+
+    <ListView
+        android:id="@+id/commentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/comment"
+        android:layout_marginBottom="8dp">
+    </ListView>
+
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/btn_post"
+        android:background="@color/colorBackgound2"
+        android:hint=" Write a comment"
+        android:textSize="18sp"
+        android:inputType="textMultiLine"
+        android:textColorHint="@android:color/holo_blue_dark"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_green_light"
+        android:onClick="postComment"
+        android:text="post"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+</RelativeLayout>
