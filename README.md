@@ -3,7 +3,7 @@
 ### Android application that provides Bangladeshi Board textbooks of standard 1-10.
 
 **The app includes:**\
-improved and rigid UI\
+Improved and rigid UI\
 Authentication based user account system\
 Per book forum section for general discussion over the topics of a book\
 Comment and reply option\
