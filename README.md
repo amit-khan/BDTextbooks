@@ -9,3 +9,5 @@ Per book forum section for general discussion over the topics of a book\
 Comment and reply option\
 Admin panel to monitor the comments\
 NoSQL database (Google Firebase) was used for the backend.
+
+Go to the link to view UI and working demo: https://sites.google.com/view/amithasankhan/projects/bd-textbooks
