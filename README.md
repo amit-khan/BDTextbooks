@@ -1,4 +1,4 @@
-# BDTextbooks
+# BD Textbooks
 
 ### Android application that provides Bangladeshi Board textbooks of standard 1-10.
 
